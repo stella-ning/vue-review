@@ -1462,7 +1462,7 @@ export default {
 
 ### 1.编码优化:
 
-- 1.不要将所有的数据都放在data中，data中的数据都会增加getter和setter，会收集对应的watcher 
+- 1.不要将所有的数据都放在data中，data中的数据都会增加getter和setter，会收集对应的watcher ，对应纯展示的数据，没有任何交互的，可以放到computed里面
 
 - 2.`vue` 在 v-for 时给每项元素绑定事件需要用事件代理
 - 3.`SPA`页面采用keep-alive缓存组件
